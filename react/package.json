@@ -1,0 +1,54 @@
+{
+    "name": "@jojovms/react-offline-toast",
+    "version": "0.0.1",
+    "description": "Connectō: React wrapper for @jojovms/offline-toast-core. Stay aware, stay connected.",
+    "keywords": [
+        "react",
+        "offline",
+        "toast",
+        "network",
+        "hooks",
+        "component",
+        "connectō",
+        "jojovms"
+    ],
+    "author": "Shijo Shaji (https://shijoshaji.in)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shijoshaji/offline-toast.git",
+        "directory": "react"
+    },
+    "bugs": {
+        "url": "https://github.com/shijoshaji/offline-toast/issues"
+    },
+    "homepage": "https://shijoshaji.github.io/offline-toast/",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite build --watch"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
+    "dependencies": {
+        "@jojovms/offline-toast-core": "*"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "typescript": "^5.0.0",
+        "vite": "^5.0.0",
+        "vite-plugin-dts": "^3.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
