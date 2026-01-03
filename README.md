@@ -6,11 +6,11 @@
 
 This repository houses the following packages:
 
-| Package | Version | Description |
-| :--- | :--- | :--- |
-| **[`@jojovms/offline-toast-core`](./packages/offline-toast/core)** | `0.0.1` | The core logic for network monitoring and toast notifications. |
-| **[`@jojovms/react-offline-toast`](./packages/offline-toast/react)** | `0.0.1` | A React wrapper (hook & component) for easy integration. |
-| **[`@jojovms/angular-offline-toast`](./packages/offline-toast/angular)** | `0.0.1` | An Angular wrapper (service & directive) for seamless usage. |
+| Package | Description |
+| :--- | :--- |
+| **[`@jojovms/offline-toast-core`](./core)** | The core logic for network monitoring and toast notifications. |
+| **[`@jojovms/react-offline-toast`](./react)** | A React wrapper (hook & component) for easy integration. |
+| **[`@jojovms/angular-offline-toast`](./angular)** | An Angular wrapper (service & directive) for seamless usage. |
 
 ## 🚀 Installation
 
