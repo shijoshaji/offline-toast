@@ -1,6 +1,6 @@
 {
     "name": "@jojovms/angular-offline-toast",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Connectō: Angular wrapper for @jojovms/offline-toast-core. Stay aware, stay connected.",
     "keywords": [
         "angular",
@@ -22,12 +22,10 @@
         "url": "https://github.com/shijoshaji/offline-toast/issues"
     },
     "homepage": "https://shijoshaji.github.io/offline-toast/",
-    "files": [
-        "dist"
-    ],
     "scripts": {
         "build": "ng-packagr -p ng-package.json",
-        "dev": "vite build --watch"
+        "dev": "vite build --watch",
+        "pub": "npm publish dist --access public"
     },
     "peerDependencies": {
         "@angular/core": "^16.0.0 || ^17.0.0 || ^18.0.0",
