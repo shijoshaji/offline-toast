@@ -1,6 +1,6 @@
 {
     "name": "@jojovms/react-offline-toast",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Connectō: React wrapper for @jojovms/offline-toast-core. Stay aware, stay connected.",
     "keywords": [
         "react",
@@ -22,7 +22,7 @@
         "url": "https://github.com/shijoshaji/offline-toast/issues"
     },
     "homepage": "https://shijoshaji.github.io/offline-toast/",
-    "main": "./dist/index.js",
+    "main": "./dist/index.umd.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "files": [

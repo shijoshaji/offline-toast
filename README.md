@@ -35,17 +35,19 @@ npm install @jojovms/angular-offline-toast
 
 ### Core (Vanilla JS)
 ```javascript
-import { offlineToast } from '@jojovms/offline-toast-core';
+import { OfflineToast } from '@jojovms/offline-toast-core';
 
-// Initialize with default settings
-offlineToast.init();
-
-// Or customize it
-offlineToast.init({
-  message: "You are currently offline",
-  duration: 3000,
-  position: "bottom-right"
+// Initialize
+const toast = new OfflineToast({
+  theme: 'dark', // 'light' | 'dark'
+  position: 'bottom-center', // 'top-center' | 'bottom-center' | 'top-right' | 'bottom-right' | 'center'
+  duration: 3000 // Time to show the "Back online" message (ms)
 });
+
+toast.init();
+
+// Cleanup (if needed)
+// toast.cleanup();
 ```
 
 ### React
@@ -63,23 +65,27 @@ function App() {
 ```
 
 ### Angular
-Import the module in your `app.module.ts`:
+Inject the `OfflineToastService` in your root component (e.g., `app.component.ts`):
 
 ```typescript
-import { OfflineToastModule } from '@jojovms/angular-offline-toast';
+import { Component, OnInit } from '@angular/core';
+import { OfflineToastService } from '@jojovms/angular-offline-toast';
 
-@NgModule({
-  imports: [
-    OfflineToastModule
-  ],
-  // ...
+@Component({
+  selector: 'app-root',
+  template: `<router-outlet></router-outlet>`
 })
-export class AppModule { }
-```
+export class AppComponent implements OnInit {
+  
+  constructor(private toastService: OfflineToastService) {}
 
-Use the directive in your template:
-```html
-<lib-offline-toast></lib-offline-toast>
+  ngOnInit() {
+    this.toastService.init({
+      theme: 'dark',
+      position: 'center'
+    });
+  }
+}
 ```
 
 ## 👨‍💻 Author

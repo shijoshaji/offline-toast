@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { OfflineToast as CoreToast, OfflineToastOptions } from '@jojovms/offline-toast-core';
 
 export type { OfflineToastOptions };
@@ -24,7 +24,7 @@ export const OfflineToast = (props: OfflineToastOptions) => {
 
 export const useNetworkStatus = () => {
     // Simple hook for people who want to build their own UI
-    const [isOnline, setIsOnline] = React.useState(typeof navigator !== 'undefined' ? navigator.onLine : true);
+    const [isOnline, setIsOnline] = useState(typeof navigator !== 'undefined' ? navigator.onLine : true);
 
     useEffect(() => {
         const updateOnlineStatus = () => setIsOnline(navigator.onLine);
