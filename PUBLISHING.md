@@ -15,7 +15,11 @@ The publishing process for **Angular** is different from **React** and **Core**.
 The Angular package is built using `ng-packagr`.
 
 - **Why different?**: `ng-packagr` generates a completely new, valid `package.json` inside the `dist` folder. The source `package.json` is partially for development and contains fields that should not be in the final distribution.
-  - **How to publish**:
+  - **How to publish**: 
+  
+  update this in package.json
+          "pub": "cd dist && npm publish --access public"
+
   1. **Version** (in `packages/offline-toast/angular`):
      ```bash
      npm version patch  # or minor/major

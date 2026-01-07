@@ -1,6 +1,6 @@
 {
     "name": "@jojovms/angular-offline-toast",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Connectō: Angular wrapper for @jojovms/offline-toast-core. Stay aware, stay connected.",
     "keywords": [
         "angular",
@@ -25,7 +25,7 @@
     "scripts": {
         "build": "ng-packagr -p ng-package.json",
         "dev": "vite build --watch",
-        "pub": "npm publish dist --access public"
+        "pub": "cd dist && npm publish --access public"
     },
     "peerDependencies": {
         "@angular/core": "^16.0.0 || ^17.0.0 || ^18.0.0",
